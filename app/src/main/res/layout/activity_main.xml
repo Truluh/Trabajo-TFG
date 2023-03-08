@@ -23,12 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <TextView
-            android:gravity="center"
-            android:textSize="30dp"
-            android:text="Usuario: "
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+
 
         <EditText
             android:hint="ejemplo@gmail.com"
