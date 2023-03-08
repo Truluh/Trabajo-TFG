@@ -26,9 +26,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
-    buildFeatures {
-        viewBinding true
-    }
 }
 
 dependencies {
@@ -36,9 +33,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation files('libs/mysql-connector-java-5.1.49.jar')
-    implementation 'androidx.navigation:navigation-fragment:2.4.1'
-    implementation 'androidx.navigation:navigation-ui:2.4.1'
+    implementation files('A:\\Program Files (x86)\\ProyectosAndroidStudio\\conexionDbRemoto\\Librerias\\mysql-connector-java-5.1.49.jar')
 
     testImplementation 'junit:junit:4.13.2'
 
