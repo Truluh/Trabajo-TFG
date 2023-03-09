@@ -7,6 +7,14 @@
     tools:context=".Registro"
     android:orientation="vertical">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <TextView
         android:textAlignment="center"
         android:textSize="80dp"
@@ -60,6 +68,7 @@
             android:id="@+id/etContraseñaRegistro"
             android:layout_width="match_parent"
             android:text=""
+            android:password="true"
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
@@ -231,5 +240,7 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
+    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
