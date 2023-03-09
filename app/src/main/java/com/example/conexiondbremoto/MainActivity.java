@@ -18,11 +18,12 @@ import java.sql.*;
 public class MainActivity extends AppCompatActivity {
     private EditText etUsuario, etContrasena;
     private Button btnLogin;
+    private Button btnRegistro;
     private static String driver = "com.mysql.jdbc.Driver";
     private static String url = "jdbc:mysql://db4free.net/tienda_mascotas?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false";
     private static String user = "tienda_admin";
     private static String password = "adminTienda2023";
-    private static Connection cnx = null;
+    public static Connection cnx = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +33,9 @@ public class MainActivity extends AppCompatActivity {
         // realizamos la conexion con la base de datos
         realizarConexion();
 
-        etUsuario = findViewById(R.id.etUsuario);
-        etContrasena = findViewById(R.id.etContrasena);
+        btnRegistro = findViewById(R.id.btnRegistrarseLogin);
+        etUsuario = findViewById(R.id.etUsuarioLogin);
+        etContrasena = findViewById(R.id.etContrasenaLogin);
         btnLogin = findViewById(R.id.btnLogin);
 
         //click del boton login
@@ -60,6 +62,14 @@ public class MainActivity extends AppCompatActivity {
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
                 }
+            }
+        });
+
+        btnRegistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent a = new Intent(MainActivity.this,Registro.class);
+                startActivity(a);
             }
         });
 

@@ -11,7 +11,7 @@
         android:textAlignment="center"
         android:textSize="80dp"
         android:text="Animalada"
-        android:background="#DD0505"
+        android:background="#DF4CAF50"
         android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
-            android:id="@+id/etUsuario"/>
+            android:id="@+id/etUsuarioLogin"/>
 
         <TextView
             android:gravity="center"
@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <EditText
-            android:id="@+id/etContrasena"
+            android:id="@+id/etContrasenaLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="********" />
@@ -54,9 +54,20 @@
             android:text="Login"
             android:id="@+id/btnLogin"
             android:textColor="@color/white"
-            android:backgroundTint="#DD0505"
+            android:backgroundTint="#DF4CAF50"
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="Registrarse"
+            android:id="@+id/btnRegistrarseLogin"
+            android:textColor="@color/white"
+            android:backgroundTint="#DF4CAF50"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
             android:layout_height="wrap_content"/>
 
 
